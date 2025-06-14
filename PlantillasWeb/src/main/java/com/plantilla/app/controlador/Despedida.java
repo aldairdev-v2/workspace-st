@@ -14,7 +14,7 @@ public class Despedida {
 						   @RequestParam(name="mnsj",required=false,defaultValue="ACECTOO") String mensaje,Model model) {
 		model.addAttribute("destinatario", destino);
 		model.addAttribute("mnsj", mensaje);
-		return "BYE";
+		return "Despedida";//TEMPLATE
 	}
 
 }
