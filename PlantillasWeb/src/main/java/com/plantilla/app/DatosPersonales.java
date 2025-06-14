@@ -3,6 +3,9 @@ package com.plantilla.app;
 public class DatosPersonales {
 	
 	private String nombre;
+	private String apellido;
+	private int edad;
+	
 	public String getNombre() {
 		return nombre;
 	}
@@ -15,13 +18,12 @@ public class DatosPersonales {
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
-	public String getEdad() {
+	public int getEdad() {
 		return edad;
 	}
-	public void setEdad(String edad) {
+	public void setEdad(int edad) {
 		this.edad = edad;
 	}
-	private String apellido;
-	private String edad;
+
 
 }
