@@ -1,7 +1,21 @@
-package com.plantilla.app;
+package com.plantilla.app.entidad;
 
-public class DatosPersonales {
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "datospersonales")
+public class DatosPersonalesEntity {
 	
+	@Id
+	private int id;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	private String nombre;
 	private String apellido;
 	private int edad;
@@ -24,6 +38,5 @@ public class DatosPersonales {
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
-
 
 }

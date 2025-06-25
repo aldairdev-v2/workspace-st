@@ -5,10 +5,25 @@
 <title>Control Escolar</title>
 </head>
 <body>
-
+<!-- 
 	<h1>ALUMNOS</h1>
 	<p th:text="|Nombre del alumno: ${nombre}|"/><br>
 	<p th:text="|Apellido del alumno: ${apellido}|"/><br>
 	<p th:text="|Edad del alumno: ${edad}|"/><br>
+-->
+
+<form th:action="@{/procesarformulario}" th:object="${objdatosperso}" method="POST">
+
+<label>Nombre</label>
+<input type="text" th:field="*{nombre}"><br>
+
+<label>Apellido</label>
+<input type="text" th:field="*{apellido}"><br>
+
+<label>Edad</label>
+<input type="number" th:field="*{edad}"><br>
+<button type="submit">ENVIAR</button>
+	
+</form>
 </body>
 </html>
